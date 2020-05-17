@@ -2,19 +2,22 @@
   "name": "weatherdata",
   "version": "1.0.0",
   "description": "",
-  "main": "weatherApi.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.16.2",
+    "body-parser": "^1.19.0",
     "color": "^3.1.2",
     "express": "^4.17.1",
+    "got": "^11.1.4",
     "knex": "^0.21.1",
     "mysql": "^2.18.1",
     "pg": "^8.2.0",
     "readline-sync": "^1.4.10",
-    "request": "^2.88.2"
+    "request": "^2.81.0"
   }
 }
