@@ -7,7 +7,7 @@ state_List = ["Andhra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh
 "Himachal Pradesh","Jharkhand","Karnataka","Kerala","Madhya Pradesh","Maharashtra","Manipur","Meghalaya",
 "Mizoram","	Nagaland","	Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttar Pradesh","Uttarakhand","West Bengal"]
 
-// 
+
 captial_List = ["Amaravati","Itanagar","Dispur","Patna","Naya Raipur","Panaji","Gandhinagar","Chandigarh","Shimla","Ranchi","Bengaluru",
 "Thiruvananthapuram","Bhopal","Mumbai","Imphal","Shillong","Aizawl","Kohima","Bhubaneswar",
 "Chandigarh","Jaipur","Gangtok","Chennai","Hyderabad","Agartala","Lucknow","Dehradun","	Kolkata"]
@@ -24,7 +24,9 @@ var allData = JSON.parse(body);
     var tempValue = Math.floor(temp);
     var state_data = state_List[j]
     j =j+ 1
-    console.log(state_data,tempValue)
     })
+    console.log(tempValue)
+
 }
   
+
