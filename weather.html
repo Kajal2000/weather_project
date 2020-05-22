@@ -6,36 +6,43 @@
         $.ajax({
           url: 'http://localhost:8000/getApi',
           data: {
-    
+
           },
           dataType: 'json',
           success: function (data) {
+            red = 0
             for (i of data) {
                 var State = i[2]
                 var Temperature = i[0]
-                var Color = ""
-              $('#StateId').append(`<tr><td>${State}</td><td>${Temperature}</td><td>${Color} </td></tr>`);
+                // var Color = ""  
+              $('#StateId').append(`<tr><td>${State}</td><td>${Temperature}</td><td style = "background-color : rgba(${red} ,128 , 128 , 0.8)"></td></tr>`);
+                red = red + 15
+
             }
           }
         });
       </script>
-
 <style>
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 50%;
 }
-
 td, th {
-  border: 1px solid #dddddd;
+  border: 1px solid #030303;
   text-align: left;
-  padding: 15px;
+  padding: 20px;
 }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+/* td {
+    background-color: rgba(red, green, blue, alpha);
+} */
+
+
+
+/* tr:nth-child() {
+  background-color: #42ee0dd8;
+} */
 </style>
 </head>
 <body>
